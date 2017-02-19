@@ -58,6 +58,24 @@
 </head>
 
 <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1754200921464036',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
      <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -78,13 +96,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">BAREÆNDER</a>
+                <a class="navbar-brand" href="index.php">BAREÆNDER VIDEO</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="produktvisning.php">PRODUCTS</a>
+                        <a href="produktvisning.php">MOVIES</a>
                     </li>
                    
                     <li>
@@ -459,9 +477,10 @@
    <div class="col-lg-12">
     <div class="container">
      <div class="box1">
-                    <p style="text-align: center">www.bareænder.dk ©2016<br>
+                    <p style="text-align: center">www.film.bareænder.dk ©2017<br>
                     +45 50 71 10 50<br>
                     shop@bareænder.dk</p>
+
     </div>
     </div>
   </div>
