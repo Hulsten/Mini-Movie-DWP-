@@ -205,7 +205,7 @@ if(isset($_POST['update']))
                     <th width='10%' height='20'>Id</th>
                     <th width='10%' height='20'>Ducks</th>
                     <th width='10%' height='20'>Category</th>
-                    <th width='10%' height='20'>Prize</th>
+                    <th width='10%' height='20'>Udgivet år</th>
                     <th width='10%' height='20'>Tags</th>
                     </tr>";
 
@@ -282,7 +282,7 @@ if(isset($_POST['update']))
            Not Connected
 <div>
       <a href="fbconfig.php">Login with Facebook</a></div>
-	 <div> <a href="http://www.krizna.com/general/login-with-facebook-using-php/"  title="Login with facebook">View Post</a>
+	 <div> <a href="http://cliffhulsten.info/"  title="Hulsten Web">Se mere fra Cliff Hulsten</a>
 	  </div>
       </div>
     <?php endif ?>

@@ -97,7 +97,7 @@
 	</div>
    <div class="row">
     <div id="recommendedducks" style="margin: auto; width: 50%;">
-       <h1>Ænder der minder om det produkt du ser på</h1>
+       <h1>Videoer der minder om denne</h1>
         <?php
             if(isset($_GET["name"])) {
                 $name = $_GET["name"];

@@ -94,7 +94,7 @@ session_start();
            Not Connected
 <div>
       <a href="fbconfig.php">Login with Facebook</a></div>
-	 <div> <a href="http://www.krizna.com/general/login-with-facebook-using-php/"  title="Login with facebook">View Post</a>
+	 <div> <a href="http://cliffhulsten.info/"  title="Hulsten Web">Se mere fra Cliff Hulsten</a>
 	  </div>
       </div>
     <?php endif ?>
