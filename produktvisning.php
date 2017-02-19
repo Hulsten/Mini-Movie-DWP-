@@ -140,7 +140,7 @@ function filterTable($query)
                     </li>
 				
 					 <li>
-                        <a href="login/login.php">LOGIN</a>
+                        <a href="login/1353/index.php">LOGIN</a>
                     </li>
 					<li>
                         <a href="kurv.php">BASKET</a>
@@ -206,7 +206,7 @@ $(function() {
                     <div class="caption">
                         <h3><?php echo $row['ducks'];?></h3>
 						<p>Kategori: <?php echo $row['category'];?></p>
-                        <p>DKK: <?php echo $row['prize'];?></p>
+                        <p>Udgivelses år: <?php echo $row['prize'];?></p>
                         <div class="btn-group">
                             <button type="button" data-id="<?= $row['id'] ?>" class="btn btn-primary btn-sm buy-now-btn" href="#">TILFØJ KURV</button>
                             <a type="button" class="btn btn-info btn-sm" href="produkt.php?name=<?php echo $row['url'];?>">SE MERE</a>

@@ -369,7 +369,7 @@
         </div>
         
         
-     <div class="well">
+    <!-- <div class="well">
         <div class="dailyproduct">
         <?
             
@@ -480,7 +480,7 @@
     </div>
     <!-- /.container -->
 
-    
+    -->
 
 </body>
 

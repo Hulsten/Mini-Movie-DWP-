@@ -49,6 +49,14 @@
 </head>
 
 <body>
+ <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v2.8&appId=1754200921464036";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -70,6 +78,7 @@
     <div class="col-sm-6">
 		<h1><?php echo $_GET['name'];?></h1>
 		<h4 style="text-align: left;">Intet spa uden gummiand! Få dig en gummiand med nogle frække solbriller, der kan svømme rundt og passe på dit spabad. <br> <br><B>Katogori</B><br>Denne type ænder er fremstille med inspiration fra den virkelige verden<br><br><B>Størrelse</B><br>5 cm.</h4>
+   <div class="fb-comments" data-href="http://film.bare&#xe6;nder.dk/produkt.php?name=<?=$_GET["name"]?>" data-numposts="5"></div>
     <div class="row">
                           <div class="col-xs-6">
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -93,7 +102,7 @@
             if(isset($_GET["name"])) {
                 $name = $_GET["name"];
                 $mysqli = mysqli_connect("mysql17.unoeuro.com", "bareaender_dk0", "1Nygummiand", "bareaender_dk0_db");
-                $result = mysqli_query($mysqli, "SELECT tags FROM products WHERE ducks='" . $name . "'");
+                $result = mysqli_query($mysqli, "SELECT tags FROM products WHERE url='" . $name . "'");
 
                 $tags = null;
                 if(mysqli_num_rows($result) == 1) {
