@@ -110,7 +110,7 @@
                     </li>
                 
                      <li>
-                        <a href="login/login.php">LOGIN</a>
+                        <a href="login/1353/index.php">LOGIN</a>
                     </li>
                     <li>
                         <a href="kurv.php">BASKET</a>
@@ -159,7 +159,7 @@
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/b29yLwesgdI" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
                         <h3>Dr And</h3>
@@ -180,7 +180,9 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/products/barsket900.jpg" style="height: 250px;" alt="">
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/HUxnwivu5fE" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3>BasketAnd</h3>
                         <p>DKK 75.00</p>
@@ -205,7 +207,9 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/products/superhelt900.jpg" style="height: 250px;" alt="">
+                   <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/oAZFtEKi44c" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3>Marieand</h3>
                         <p>DKK 75.00</p>
@@ -230,7 +234,9 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/products/ridder900.jpg" style="height: 250px;" alt="">
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/rSo5MqQVwCY" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3>RidderAnd</h3>
                         <p>DKK 75.00</p>
@@ -254,7 +260,9 @@
             </div>
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/products/Surferand900x900.png" style="height: 250px;" alt="">
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ohZTiVT2qFk" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3>SurfAnd</h3>
                         <p>DKK 75.00</p>
@@ -279,7 +287,9 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/products/greenugle900.jpg" style="height: 250px;" alt="">
+                   <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/uzbY3m32vFE" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3>SMUKKESINE</h3>
                         <p>DKK 75.00</p>
@@ -304,7 +314,9 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/products/Mensand900x900.png" style="height: 250px;" alt="">
+                   <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/nPHSdNnfQLY" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3>RUBBERDUCKS</h3>
                         <p>DKK 75.00</p>
@@ -329,7 +341,9 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/products/lovehv900.jpg" style="height: 250px;" alt="">
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Mh85R-S-dh8" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3>Love dog</h3>
                         <p>DKK 75.00</p>

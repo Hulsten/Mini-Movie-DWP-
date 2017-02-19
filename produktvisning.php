@@ -32,7 +32,7 @@ else {
 // function to connect and execute the query
 function filterTable($query)
 {
-    $connect = mysqli_connect("mysql17.unoeuro.com", "bareaender_dk0", "1Nygummiand", "bareaender_dk0_db");
+    $connect = mysqli_connect("mysql17.unoeuro.com", "bareaender_dk0", "1Nygummiand", "bareaender_dk0_db2");
     $filter_Result = mysqli_query($connect, $query);
     return $filter_Result;
 }
@@ -200,14 +200,16 @@ $(function() {
               <?php while($row = mysqli_fetch_array($search_result)):?>
                <div class=col-md-3 col-sm-6 hero-feature>
                <div class="thumbnail">
-                    <img alt="" style="object-fit: cover; height: 220px;" src="images/<?php echo $row['url'];?>.jpg">
+                   <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/<?php echo $row['url'];?>" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3><?php echo $row['ducks'];?></h3>
 						<p>Kategori: <?php echo $row['category'];?></p>
                         <p>DKK: <?php echo $row['prize'];?></p>
                         <div class="btn-group">
                             <button type="button" data-id="<?= $row['id'] ?>" class="btn btn-primary btn-sm buy-now-btn" href="#">TILFØJ KURV</button>
-                            <a type="button" class="btn btn-info btn-sm" href="produkt.php?name=<?php echo $row['ducks'];?>">SE MERE</a>
+                            <a type="button" class="btn btn-info btn-sm" href="produkt.php?name=<?php echo $row['url'];?>">SE MERE</a>
                         </div>
                         <p id="confirm-<?=  $row['id'] ?>">
                         </p>

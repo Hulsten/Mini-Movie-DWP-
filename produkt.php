@@ -63,7 +63,9 @@
     <div class="container">
     <div class="row">
     <div class="col-sm-6">
-        <img src="/images/products/<?=$_GET["name"]?>.jpg" style="height: 300px;">    
+         <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/<?=$_GET["name"]?>" frameborder="0" allowfullscreen></iframe>
+					</div>    
 		</div>
     <div class="col-sm-6">
 		<h1><?php echo $_GET['name'];?></h1>
