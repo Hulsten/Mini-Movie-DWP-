@@ -1,42 +1,17 @@
-<?php
-	session_start();
-	require_once("includes/connection.php");
-	require_once("includes/session.php");
-	require_once("includes/functions.php");
-?>
-<?php
-	if(logged_in()) {
-		redirect_to("/login/dashboard/dashboardindex.php");
-	}
-?>
-<?php
-	// START FORM PROCESSING
-	if (isset($_POST['submit'])) { // Form has been submitted.
-		$username = trim(mysqli_real_escape_string($connection, $_POST['name']));
-		$password = trim(mysqli_real_escape_string($connection,$_POST['password']));
 
+<?php
+$fb = new Facebook\Facebook([
+  'app_id' => '1754200921464036', // Replace {app-id} with your app id
+  'app_secret' => '0f5b6f89a576d9754bc7fdf719f5600e',
+  'default_graph_version' => 'v2.2',
+  ]);
 
-		$query = "SELECT * FROM user WHERE name = '" . $username . "'";
-		$result = mysqli_query($connection, $query);
-			if (mysqli_num_rows($result) == 1) {
-				
-				// username/password authenticated
-				// and only 1 match
-				$found_user = mysqli_fetch_array($result);
-                if(password_verify($password, $found_user['password'])){
-				    $_SESSION['user_id'] = $found_user['ID'];
-				    $_SESSION['name'] = $found_user['name'];
-				    redirect_to("/login/dashboard/dashboardindex.php");
-			} else {
-				// username/password combo was not found in the database
-				$message = "Username/password combination incorrect.<br />
-					Please make sure your caps lock key is off and try again.";
-			}}
-	} else { // Form has not been submitted.
-		if (isset($_GET['logout']) && $_GET['logout'] == 1) {
-			$message = "You are now logged out.";
-		} 
-	}
+$helper = $fb->getRedirectLoginHelper();
+
+$permissions = ['email']; // Optional permissions
+$loginUrl = $helper->getLoginUrl('http://film.xn--barender-m0a.dk/login/fb-callback.php', $permissions);
+
+echo '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
 ?>
 
 <html>
@@ -65,7 +40,41 @@
 
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1754200921464036',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+	
+	FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {
+    // the user is logged in and has authenticated your
+    // app, and response.authResponse supplies
+    // the user's ID, a valid access token, a signed
+    // request, and the time the access token 
+    // and signed request each expire
+    var uid = response.authResponse.userID;
+    var accessToken = response.authResponse.accessToken;
+  } else if (response.status === 'not_authorized') {
+    // the user is logged in to Facebook, 
+    // but has not authenticated your app
+  } else {
+    // the user isn't logged in to Facebook.
+  }
+ });
+</script>
 
 <?php if(!empty($message)) {echo "<p>" . $message . "</p>";} ?>
 

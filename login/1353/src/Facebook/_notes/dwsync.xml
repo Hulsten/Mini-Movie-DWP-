@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="FacebookAuthorizationException.php" server="linux113.unoeuro.com//film/" local="131320023775429176" remote="131320030200000000" Dst="1" />
+<file name="FacebookCanvasLoginHelper.php" server="linux113.unoeuro.com//film/" local="131320023776030855" remote="131320030200000000" Dst="1" />
+<file name="FacebookClientException.php" server="linux113.unoeuro.com//film/" local="131320023776431908" remote="131320030200000000" Dst="1" />
+<file name="FacebookJavaScriptLoginHelper.php" server="linux113.unoeuro.com//film/" local="131320023776989367" remote="131320030200000000" Dst="1" />
+<file name="FacebookOtherException.php" server="linux113.unoeuro.com//film/" local="131320023777590958" remote="131320030200000000" Dst="1" />
+<file name="FacebookPageTabHelper.php" server="linux113.unoeuro.com//film/" local="131320023778784215" remote="131320030200000000" Dst="1" />
+<file name="FacebookPermissionException.php" server="linux113.unoeuro.com//film/" local="131320023779250456" remote="131320030200000000" Dst="1" />
+<file name="FacebookRedirectLoginHelper.php" server="linux113.unoeuro.com//film/" local="131320023780609167" remote="131320030200000000" Dst="1" />
+<file name="FacebookRequest.php" server="linux113.unoeuro.com//film/" local="131320023781962814" remote="131320030200000000" Dst="1" />
+<file name="FacebookRequestException.php" server="linux113.unoeuro.com//film/" local="131320023782775035" remote="131320030200000000" Dst="1" />
+<file name="FacebookResponse.php" server="linux113.unoeuro.com//film/" local="131320023783677523" remote="131320030200000000" Dst="1" />
+<file name="FacebookSDKException.php" server="linux113.unoeuro.com//film/" local="131320023784058537" remote="131320030200000000" Dst="1" />
+<file name="FacebookServerException.php" server="linux113.unoeuro.com//film/" local="131320023784504765" remote="131320030200000000" Dst="1" />
+<file name="FacebookSession.php" server="linux113.unoeuro.com//film/" local="131320023785383407" remote="131320030200000000" Dst="1" />
+<file name="FacebookSignedRequestFromInputHelper.php" server="linux113.unoeuro.com//film/" local="131320023786260750" remote="131320030200000000" Dst="1" />
+<file name="FacebookThrottleException.php" server="linux113.unoeuro.com//film/" local="131320023786942707" remote="131320030200000000" Dst="1" />
+<file name="GraphAlbum.php" server="linux113.unoeuro.com//film/" local="131320023788045739" remote="131320030200000000" Dst="1" />
+<file name="GraphLocation.php" server="linux113.unoeuro.com//film/" local="131320023788723689" remote="131320030200000000" Dst="1" />
+<file name="GraphObject.php" server="linux113.unoeuro.com//film/" local="131320023789776837" remote="131320030200000000" Dst="1" />
+<file name="GraphPage.php" server="linux113.unoeuro.com//film/" local="131320023790503892" remote="131320030200000000" Dst="1" />
+<file name="GraphSessionInfo.php" server="linux113.unoeuro.com//film/" local="131320023791411426" remote="131320030200000000" Dst="1" />
+<file name="GraphUser.php" server="linux113.unoeuro.com//film/" local="131320023792313896" remote="131320030200000000" Dst="1" />
+<file name="GraphUserPage.php" server="linux113.unoeuro.com//film/" local="131320023793066008" remote="131320030200000000" Dst="1" />
+</dwsync>
