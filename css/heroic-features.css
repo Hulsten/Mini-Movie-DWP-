@@ -1,0 +1,344 @@
+/*
+ * Start Bootstrap - Heroic Features (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+ 
+ .dagensand {
+	 background-color: #f9f9f9;
+	 background-size: cover;
+	 height: 300px;
+ }
+ 
+.btn btn-primary btn-large {
+	align: center;
+}
+ 
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+	padding-bottom: 80px;/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.hero-spacer {
+    margin-top: 0px;
+}
+
+body {
+    padding-top: 0px;
+	margin-bottom: 80px;
+}
+
+body {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.newssection {
+	margin-bottom: 100px;
+}
+.jumbotron {
+  background-color: #ffffff;
+  background-size: cover !important;
+  width: 100% !important;
+  position: relative !important;
+  background-repeat: no-repeat !important;
+}
+
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #009bff;
+    background-size: cover;
+	text-align: left;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 80px;
+}
+
+
+.jumbotron .h1, .jumbotron h1 {
+    font-size: 63px;
+    color: #333333 !important;
+	text-align: left;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+    color: #333333;
+	text-align: left;
+}
+
+.navbar-inverse {
+    background-color: #FFDE00;
+    border-color: #FFDE00;
+}
+
+.box {
+  margin-top: 80px;
+  text-align: left;
+}
+
+.box1 {
+  padding-top: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.filtercontainer {
+  float: left;
+  width: 20%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.produktcontainer {
+  float: right;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.duck-recommendation {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 200px;
+}
+
+.duck-recommendation-top {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50%;
+
+}
+
+.duck-recommendation-top img {
+  position: relative;
+  float: left;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.duck-recommendation-bottom {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50%;
+
+}
+
+.duck-recommendation-bottom p {
+  position: relative;
+  float: left;
+
+  top: 30%;
+  left: 50%;
+
+  width: auto;
+  height: auto;
+
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 767px){
+  .produktcontainer {
+ 
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+	.filtercontainer {
+ 
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+
+#productduck {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+#productduck img {
+    width: 400px;
+    height: 400px;
+}
+
+#recommendedducks {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+#newssection {
+    position: center;
+}
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+
+
+.kurv-element {
+  position: relative;
+  float: left;
+  margin-top: 15px;
+  left: 10%;
+  width: 80%;
+  height: 75px;
+}
+
+.kurv-element-billede {
+  position: relative;
+  float: left;
+  width: 75px;
+  height: 100%;
+}
+
+.kurv-element-billede img {
+  width: 100%;
+  height: 100%;
+}
+
+.kurv-element-content {
+  position: relative;
+  float: left;
+  width: auto;
+  height: 100%;
+}
+
+.kurv-element-content p {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 30px;
+  width: auto;
+  height: auto;
+  transform: translateY(-50%);
+}
+
+.kurv-element-delete {
+  position: relative;
+  float: right;
+  width: 30px;
+  height: 100%;
+}
+
+.kurv-element-delete p {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#subtotal {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+#subtotal p {
+  position: relative;
+  float: left;
+  left: 50%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+
+.spacer {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+@media (min-width: 767px){
+.well {
+  height: 150px;
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+	}
