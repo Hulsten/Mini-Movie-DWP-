@@ -130,7 +130,7 @@
         <!-- Title -->
         <div class="row">
             <div class="col-lg-12">
-                <h3>POPULÆRE ÆNDER</h3>
+                <h3>POPULÆRE FILM</h3>
             </div>
         </div>
         <!-- /.row -->
@@ -149,12 +149,7 @@
                         <p>
                           <div class="row">
                           <div class="col-xs-6">
-                           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-<input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 30px;">
-<img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-</form>
+							<a class="btn btn-info btn-sm" href="produkt.php?name=DrAnd" >Anbefal</a>
 							  </div>
                            <div class="col-xs-6">
                             <a class="btn btn-info btn-sm" href="produkt.php?name=DrAnd" >Se mere</a>
