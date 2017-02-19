@@ -25,7 +25,7 @@
     <meta property="og:image:height"       content="1410px" />
 
 
-    <title>BAR' ÆNDER WEBSHOP - Cliff, Rasmus</title>
+    <title>BAREÆNDER FILM</title>
 	<!-- favorit icon -->
     <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
     <!-- Bootstrap Core CSS -->
@@ -111,15 +111,11 @@
          <div class="jumbotron">
             <div class="container">
                 <div class="box">
-                <div class="col-md-6 col-sm-6">
-                    <h1>Byens bedste badeænder!</h1>
-                        <p>Nettets bedste badeænder online</p>
-                         <p><a class="btn btn-lg btn-primary" style="text-align: center" href="produktvisning.php">Se udvalget</a>
-                         </p>
-                 </div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allowfullscreen></iframe>
+					</div>
 
-              <div class="col-md-6 col-sm-6">
-                <img <img src="images/duck.png" alt="Gummiand">
             </div>
             </div>
             </div>
@@ -144,7 +140,9 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/products/BatAnd.png" style="height: 250px;" alt="">
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/MtN1YnoL46Q" frameborder="0" allowfullscreen></iframe>
+					</div>
                     <div class="caption">
                         <h3>Dr And</h3>
                         <p>DKK 75.00</p>
