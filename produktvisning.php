@@ -1,7 +1,7 @@
 <?php
 include('login/includes/connection.php');
-    $min = 1;
-    $max = 600;
+    $min = 1900;
+    $max = 2018;
 if(isset($_POST['search']))
 {
     $valueToSearch = $_POST['valueToSearch'];
@@ -53,14 +53,14 @@ function filterTable($query)
     <!-- Facebook Markup -->
     <meta property="og:url"                content="http://bareænder.dk/index.html" />
 	<meta property="og:type"               content="article" />
-	<meta property="og:title"              content="En verden af Bare Ænder" />
+	<meta property="og:title"              content="En verden af Bare Ænder Film" />
 	<meta property="og:description"        content="Vi har brugt tid og kræfter på at finde de bedste ænder" />
 	<meta property="og:image"              content="http://xn--barender-m0a.dk/images/rubber-duck.png" />
     <meta property="og:image:width"        content="1373px" />
     <meta property="og:image:height"       content="1410px" />
 
 
-    <title>Bare &AElig;nder - Webshop</title>
+    <title>Bare &AElig;nder - Film</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -126,13 +126,13 @@ function filterTable($query)
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Bare&AElig;nder</a>
+                <a class="navbar-brand" href="index.php">BAREÆNDER VIDEO</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="produktvisning.php">PRODUCTS</a>
+                        <a href="produktvisning.php">MOVIES</a>
                     </li>
 
 					 <li>
@@ -141,9 +141,6 @@ function filterTable($query)
 				
 					 <li>
                         <a href="login/1353/index.php">LOGIN</a>
-                    </li>
-					<li>
-                        <a href="kurv.php">BASKET</a>
                     </li>
                 </ul>
             </div>
@@ -158,7 +155,7 @@ function filterTable($query)
     	<div class="filtercontainer">
             <div class="form-group">
         <form action="produktvisning.php" method="post">
-    <input style="margin: 40 px auto 0 0" class="form-control" type="text" name="valueToSearch" placeholder="Look for a duck">
+    <input style="margin: 40 px auto 0 0" class="form-control" type="text" name="valueToSearch" placeholder="Look for a Movie">
 			<br>
     <input type="submit" class="btn btn-default" name="search" value="Search / reset"><br><br>
 			</div>
@@ -167,12 +164,12 @@ function filterTable($query)
 	<br>
 	<form action="" method="post" id="products">
 <div style="margin-left:0px">
-    <label for="amount">Pris mellem:</label>
+    <label for="amount">Udgivet mellem:</label>
     <input type="text" id="amount" name="amount" style="border:0; color:black; font-weight:bold;" readonly>
     <br><br>
     <div id="slider-range" style="width:80%;"></div>
     <br><br>
-    <input type="submit" name="prizerange" class="btn btn-default" value=" Show products " />
+    <input type="submit" name="prizerange" class="btn btn-default" value=" Show film " />
     <br><br>
     <?php echo $HTML; ?>
 </div>
@@ -182,15 +179,15 @@ function filterTable($query)
 $(function() {
     $( "#slider-range" ).slider({
       range: true,
-      min: 1,
-      max: 200,
+      min: 1990,
+      max: 2018,
       values: [ <?php echo $min; ?>, <?php echo $max; ?> ],
       slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }
     });
-    $( "#amount" ).val( "DKK" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - DKK" + $( "#slider-range" ).slider( "values", 1 ) );
+    $( "#amount" ).val( "År" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - År" + $( "#slider-range" ).slider( "values", 1 ) );
   });
 </script>
 			</div>
@@ -208,7 +205,7 @@ $(function() {
 						<p>Kategori: <?php echo $row['category'];?></p>
                         <p>Udgivelses år: <?php echo $row['prize'];?></p>
                         <div class="btn-group">
-                            <button type="button" data-id="<?= $row['id'] ?>" class="btn btn-primary btn-sm buy-now-btn" href="#">TILFØJ KURV</button>
+                           
                             <a type="button" class="btn btn-info btn-sm" href="produkt.php?name=<?php echo $row['url'];?>">SE MERE</a>
                         </div>
                         <p id="confirm-<?=  $row['id'] ?>">

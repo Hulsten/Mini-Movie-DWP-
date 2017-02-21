@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BAR' ÆNDER WEBSHOP - Cliff, Rasmus</title>
+    <title>BAREÆNDER VIDEO</title>
     <!-- favorit icon -->
     <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
 
@@ -65,17 +65,15 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="produktvisning.php">PRODUCTS</a>
+                        <a href="produktvisning.php">MOVIES</a>
                      </li>
                      <li>
                         <a href="kontakt.php">CONTACT US</a>
                      </li>
                      <li>
-                        <a href="/login/login.php">LOGIN</a>
+                        <a href="login/1353/index.php">LOGIN</a>
                      </li>
-					           <li>
-                        <a href="kurv.php">BASKET</a>
-                     </li>
+					          
 					
                 </ul>
             </div>
@@ -88,7 +86,7 @@
     <!-- Page Content -->
     <div class="container">
         <div class="holder">
-            <h2 style="text-align: center; margin-top: 50px;">Want a special product? Contact us!</h2>
+            <h2 style="text-align: center; margin-top: 50px;">Want a special VIDEO? Contact us!</h2>
             <?php if(isset($_GET['CaptchaPass'])){ ?>
             <div class="FormElement">Message sent</div>
             <?php } ?>

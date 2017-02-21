@@ -21,6 +21,7 @@ $duck = "";
 $category = "";
 $prize = "";
 $tags = "";
+$url = "";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
@@ -40,6 +41,7 @@ function getPosts()
     $posts[2] = $_POST['category'];
     $posts[3] = $_POST['prize'];
     $posts[4] = $_POST['tags'];
+	$posts[5] = $_POST['url'];
     return $posts;
 }
 
@@ -65,6 +67,7 @@ if(isset($_POST['search']))
                 $category = $row['category'];
                 $prize = $row['prize'];
                 $tags = $row['tags'];
+				$url = $row['url'];
             }
         }else{
             echo 'No Data For This Id';
@@ -79,12 +82,12 @@ if(isset($_POST['search']))
 if(isset($_POST['insert']))
 {
     $data = getPosts();
-    $insert_Query = "INSERT INTO `products`(`ducks`, `category`, `prize`, `tags`) VALUES ('$data[1]','$data[2]',$data[3],'$data[4]')";
+    $insert_Query = "INSERT INTO `products`(`ducks`, `category`, `prize`, `tags`, `url`) VALUES ('$data[1]','$data[2]',$data[3],'$data[4]','$data[5]')";
     try{
         $insert_Result = mysqli_query($connect, $insert_Query);
 
         if (isset($_POST['Submit'])) {
-            if ($_POST['ducks'] == "" || $_POST['category'] == "" || $_POST['prize'] == "" || $_POST['tags'] == "") {
+            if ($_POST['ducks'] == "" || $_POST['category'] == "" || $_POST['prize'] == "" || $_POST['tags'] == "" || $_POST['url'] == "") {
                 echo "error: all fields are required";
             } 
         }
@@ -176,11 +179,10 @@ if(isset($_POST['update']))
 	
 	<!-- Navigation -->
 	<div style="text-align: center" id="navigation">
+	
 		<ul>
-		     <li><a href="dashboardcrud.php"><span><img src="">CRUD</span></a></li>
-            <li><a href="dashboardindex.php"<span>Index</span></a></li>
-            <li><a href="seeusers.php"<span>Current Users</span></a></li>
-            <li><a href="dashboardnews.php"><span><img src="">Update news</span></a></li>
+	     <li>NAVIGATION: -></li>
+		     <li><a href="index.php"><span><img src="">Index</span></a></li>
 		</ul>
 	</div>
     
@@ -203,10 +205,11 @@ if(isset($_POST['update']))
                     echo "<table width='100%' height='50'>
                     <tr>
                     <th width='10%' height='20'>Id</th>
-                    <th width='10%' height='20'>Ducks</th>
+                    <th width='10%' height='20'>Movie</th>
                     <th width='10%' height='20'>Category</th>
-                    <th width='10%' height='20'>Udgivet år</th>
+                    <th width='10%' height='20'>Prize</th>
                     <th width='10%' height='20'>Tags</th>
+					<th width='10%' height='20'>YouTube ID</th>
                     </tr>";
 
 
@@ -233,6 +236,10 @@ if(isset($_POST['update']))
                             echo $row['tags'];
                             $formtitle=$row['tags'];
                         echo "</td>";
+						echo "<td class='table-td'>";
+                            echo $row['url'];
+                            $formtitle=$row['url'];
+                        echo "</td>";
                      echo "</tr>";
                     }
                     echo "</table>";
@@ -246,10 +253,11 @@ if(isset($_POST['update']))
 		<h3 style="text-align: center; color: black">Find the duck by ID - delete or edit it</h1>
             <form style="text-align: center; color: black" action="" method="post">
                    Search by ID : <input type="number" name="id" placeholder="" value="<?php echo $id;?>"><br><br>
-                   Duck : <input type="text" name="duck" placeholder="" value="<?php echo $ducks;?>"><br><br>
+                   Movie : <input type="text" name="duck" placeholder="" value="<?php echo $ducks;?>"><br><br>
                    Category : <input type="text" name="category" placeholder="" value="<?php echo $category;?>"><br><br>
-                   Prize :  <input type="number" name="prize" placeholder="" value="<?php echo $prize;?>"><br><br>
+                   YEAR :  <input type="number" name="prize" placeholder="" value="<?php echo $prize;?>"><br><br>
                    Tags : <input type="text" name="tags" placeholder="" value="<?php echo $tags;?>"><br><br>
+                   Youtube id : <input type="text" name="url" placeholder="" value="<?php echo $url;?>"><br><br>
                     <div>
                 <!-- Input For Add Values To Database-->
                 <input type="submit" name="insert" value="Add">
@@ -275,7 +283,6 @@ if(isset($_POST['update']))
 <!-- End Footer -->
 </body>
 </html>
-
     <?php else: ?>     <!-- Before login --> 
 <div class="container">
 <h1>Login with Facebook</h1>
@@ -283,6 +290,8 @@ if(isset($_POST['update']))
 <div>
       <a href="fbconfig.php">Login with Facebook</a></div>
 	 <div> <a href="http://cliffhulsten.info/"  title="Hulsten Web">Se mere fra Cliff Hulsten</a>
+	  </div>
+	<div> <a href="http://film.xn--barender-m0a.dk/"  title="Bareænder video">Tilbage til Bare&AElig;nder Video</a>
 	  </div>
       </div>
     <?php endif ?>

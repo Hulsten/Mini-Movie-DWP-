@@ -1,7 +1,12 @@
 <?php
 require 'dbconfig.php';
-function checkuser($fuid,$ffname,$femail){
-    	$check = mysqli_query("SELECT * FROM Users where Fuid='$fuid'");
+/**
+ * @param $fuid
+ * @param $ffname
+ * @param $femail
+ */
+function checkuser($fuid, $ffname, $femail){
+    	$check = mysqli_query("SELECT * FROM Users where Fuid='$fuid'",);
 	$check = mysqli_num_rows($check);
 	if (empty($check)) { // if new user . Insert a new record		
 	$query = "INSERT INTO Users (Fuid,Ffname,Femail) VALUES ('$fuid','$ffname','$femail')";

@@ -43,10 +43,9 @@ session_start();
 	<!-- Navigation -->
 	<div style="text-align: center" id="navigation">
 		<ul>
+	    <li>NAVIGATION: -></li>
 		    <li><a href="dashboardcrud.php"><span><img src="">CRUD</span></a></li>
-            <li><a href="dashboardindex.php"<span>Index</span></a></li>
-            <li><a href="seeusers.php"<span>Current Users</span></a></li>
-            <li><a href="dashboardnews.php"><span><img src="">Update news</span></a></li>
+
 		</ul>
 	</div>
     
@@ -72,8 +71,7 @@ session_start();
 <li><?php echo  $_SESSION['FBID']; ?></li>
 <li class="nav-header">Facebook fullname</li>
 <li><?php echo $_SESSION['FULLNAME']; ?></li>
-<li class="nav-header">Facebook Email</li>
-<li><?php echo $_SESSION['EMAIL']; ?></li>
+
 <div><a href="logout.php">Logout</a></div>
 	  </ul>
 	</div>
@@ -95,6 +93,8 @@ session_start();
 <div>
       <a href="fbconfig.php">Login with Facebook</a></div>
 	 <div> <a href="http://cliffhulsten.info/"  title="Hulsten Web">Se mere fra Cliff Hulsten</a>
+	  </div>
+	<div> <a href="http://film.xn--barender-m0a.dk/"  title="Bareænder video">Tilbage til BareÆnder Video</a>
 	  </div>
       </div>
     <?php endif ?>

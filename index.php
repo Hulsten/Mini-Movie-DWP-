@@ -112,9 +112,6 @@
                      <li>
                         <a href="login/1353/index.php">LOGIN</a>
                     </li>
-                    <li>
-                        <a href="kurv.php">BASKET</a>
-                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -162,15 +159,13 @@
                     <iframe src="https://www.youtube.com/embed/b29yLwesgdI" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
-                        <h3>Dr And</h3>
-                        <p>DKK 75.00</p>
+                        <h3>When Did We First Use Rubber Ducks?</h3>
+                        <p>Udgivelses år: 2007</p>
                         <p>
                           <div class="row">
-                          <div class="col-xs-6">
-							<a class="btn btn-info btn-sm" href="produkt.php?name=DrAnd" >Anbefal</a>
-							  </div>
-                           <div class="col-xs-6">
-                            <a class="btn btn-info btn-sm" href="produkt.php?name=DrAnd" >Se mere</a>
+                         
+                           <div class="col-xs-12">
+                            <a class="btn btn-info btn-sm" href="produkt.php?name=b29yLwesgdI" >Se mere</a>
 							  </div>
 						</div>
                         </p>
@@ -184,20 +179,13 @@
                     <iframe src="https://www.youtube.com/embed/HUxnwivu5fE" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
-                        <h3>BasketAnd</h3>
-                        <p>DKK 75.00</p>
+                        <h3>How To Make Rubber Duck Jelly</h3>
+                        <p>Udgivelses år: 2007</p>
                         <p>
                         <div class="row">
-                          <div class="col-xs-6">
-                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-<input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 30px;">
-<img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-</form>
-							  </div>
-                           <div class="col-xs-6">
-                            <a class="btn btn-info btn-sm" href="produkt.php?name=BasketAnd" >Se mere</a>
+                        
+                           <div class="col-xs-12">
+                            <a class="btn btn-info btn-sm" href="produkt.php?name=HUxnwivu5fE" >Se mere</a>
 							  </div>
 						</div>
                         </p>
@@ -211,20 +199,13 @@
                     <iframe src="https://www.youtube.com/embed/oAZFtEKi44c" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
-                        <h3>Marieand</h3>
-                        <p>DKK 75.00</p>
+                        <h3>DIY GIANT GUMMY RUBBER DUCKY</h3>
+                        <p>Udgivelses år: 2011</p>
                         <p>
                         <div class="row">
-                          <div class="col-xs-6">
-                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							 <input type="hidden" name="cmd" value="_s-xclick">
-							 <input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-							 <input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 30px;">
-							 <img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-							 </form>
-							  </div>
-                          	 <div class="col-xs-6">
-                            <a class="btn btn-info btn-sm" href="produkt.php?name=Marieand" >Se mere</a>
+                          
+                          	 <div class="col-xs-12">
+                            <a class="btn btn-info btn-sm" href="produkt.php?name=oAZFtEKi44c" >Se mere</a>
 							  </div>
 						</div>
                         </p>
@@ -238,20 +219,12 @@
                     <iframe src="https://www.youtube.com/embed/rSo5MqQVwCY" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
-                        <h3>RidderAnd</h3>
-                        <p>DKK 75.00</p>
+                        <h3>Giant rubber duck in China</h3>
+                        <p>Udgivelses år: 2013</p>
                         <p>
                			<div class="row">
-                          <div class="col-xs-6">
-                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							 <input type="hidden" name="cmd" value="_s-xclick">
-							 <input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-							 <input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 30px;">
-							 <img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-							 </form>
-							  </div>
-                          	 <div class="col-xs-6">
-                            <a class="btn btn-info btn-sm" href="produkt.php?name=RidderAnd" >Se mere</a>
+                           	 <div class="col-xs-12">
+                            <a class="btn btn-info btn-sm" href="produkt.php?name=rSo5MqQVwCY" >Se mere</a>
 							  </div>
 						</div>
                         </p>
@@ -264,20 +237,13 @@
                     <iframe src="https://www.youtube.com/embed/ohZTiVT2qFk" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
-                        <h3>SurfAnd</h3>
-                        <p>DKK 75.00</p>
+                        <h3>Hot Knife vs. Rubber Duck</h3>
+                        <p>Udgivelses år: 2017</p>
                         <p>
                			<div class="row">
-                          <div class="col-xs-6">
-                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							 <input type="hidden" name="cmd" value="_s-xclick">
-							 <input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-							 <input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 30px;">
-							 <img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-							 </form>
-							  </div>
-                          	 <div class="col-xs-6">
-                            <a class="btn btn-info btn-sm" href="produkt.php?name=SurfAnd" >Se mere</a>
+                          
+                          	 <div class="col-xs-12">
+                            <a class="btn btn-info btn-sm" href="produkt.php?name=ohZTiVT2qFk" >Se mere</a>
 							  </div>
 						</div>                           
                         </p>
@@ -291,20 +257,13 @@
                     <iframe src="https://www.youtube.com/embed/uzbY3m32vFE" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
-                        <h3>SMUKKESINE</h3>
-                        <p>DKK 75.00</p>
+                        <h3>Rubber Duck - Crush It</h3>
+                        <p>Udgivelses år: 2011</p>
                         <p>
                			<div class="row">
-                          <div class="col-xs-6">
-                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							 <input type="hidden" name="cmd" value="_s-xclick">
-							 <input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-							 <input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 30px;">
-							 <img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-							 </form>
-							  </div>
-                          	 <div class="col-xs-6">
-                            <a class="btn btn-info btn-sm" href="produkt.php?name=SmukkeSine" >Se mere</a>
+                          
+                          	 <div class="col-xs-12">
+                            <a class="btn btn-info btn-sm" href="produkt.php?name=uzbY3m32vFE" >Se mere</a>
 							  </div>
 						</div>                           
                         </p>
@@ -318,20 +277,13 @@
                     <iframe src="https://www.youtube.com/embed/nPHSdNnfQLY" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
-                        <h3>RUBBERDUCKS</h3>
-                        <p>DKK 75.00</p>
+                        <h3>Rubber Duck Song</h3>
+                        <p>Udgivelses år: 2010</p>
                         <p>
                         <div class="row">
-                          <div class="col-xs-6">
-                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							 <input type="hidden" name="cmd" value="_s-xclick">
-							 <input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-							 <input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 30px;">
-							 <img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-							 </form>
-							  </div>
-                          	 <div class="col-xs-6">
-                            <a class="btn btn-info btn-sm" href="produkt.php?name=BatAnd" >Se mere</a>
+                         
+                          	 <div class="col-xs-12">
+                            <a class="btn btn-info btn-sm" href="produkt.php?name=nPHSdNnfQLY" >Se mere</a>
 							  </div>
 						</div>      
                         </p>
@@ -345,20 +297,13 @@
                     <iframe src="https://www.youtube.com/embed/Mh85R-S-dh8" frameborder="0" allowfullscreen></iframe>
 					</div>
                     <div class="caption">
-                        <h3>Love dog</h3>
-                        <p>DKK 75.00</p>
+                        <h3>Sesame Street</h3>
+                        <p>Udgivelses år: 1999</p>
                         <p>
                          <div class="row">
-                          <div class="col-xs-6">
-                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							 <input type="hidden" name="cmd" value="_s-xclick">
-							 <input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-							 <input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 30px;">
-							 <img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-							 </form>
-							  </div>
-                          	 <div class="col-xs-6">
-                            <a class="btn btn-info btn-sm" href="produkt.php?name=Love dog" >Se mere</a>
+                          
+                          	 <div class="col-xs-12">
+                            <a class="btn btn-info btn-sm" href="produkt.php?name=Mh85R-S-dh8" >Se mere</a>
 							  </div>
 						</div>                             
                         </p>

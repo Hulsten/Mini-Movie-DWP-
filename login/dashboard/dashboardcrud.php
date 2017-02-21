@@ -34,6 +34,7 @@ function getPosts()
     $posts[2] = $_POST['category'];
     $posts[3] = $_POST['prize'];
     $posts[4] = $_POST['tags'];
+	$posts[5] = $_POST['url'];
     return $posts;
 }
 
@@ -59,6 +60,7 @@ if(isset($_POST['search']))
                 $category = $row['category'];
                 $prize = $row['prize'];
                 $tags = $row['tags'];
+				$url = $row['url'];
             }
         }else{
             echo 'No Data For This Id';
@@ -73,12 +75,12 @@ if(isset($_POST['search']))
 if(isset($_POST['insert']))
 {
     $data = getPosts();
-    $insert_Query = "INSERT INTO `products`(`ducks`, `category`, `prize`, `tags`) VALUES ('$data[1]','$data[2]',$data[3],'$data[4]')";
+    $insert_Query = "INSERT INTO `products`(`ducks`, `category`, `prize`, `tags`, `url`) VALUES ('$data[1]','$data[2]',$data[3],'$data[4]','$data[5]')";
     try{
         $insert_Result = mysqli_query($connect, $insert_Query);
 
         if (isset($_POST['Submit'])) {
-            if ($_POST['ducks'] == "" || $_POST['category'] == "" || $_POST['prize'] == "" || $_POST['tags'] == "") {
+            if ($_POST['ducks'] == "" || $_POST['category'] == "" || $_POST['prize'] == "" || $_POST['tags'] == "" || $_POST['url'] == "") {
                 echo "error: all fields are required";
             } 
         }
@@ -201,6 +203,7 @@ if(isset($_POST['update']))
                     <th width='10%' height='20'>Category</th>
                     <th width='10%' height='20'>Prize</th>
                     <th width='10%' height='20'>Tags</th>
+					<th width='10%' height='20'>YouTube ID</th>
                     </tr>";
 
 
@@ -227,6 +230,10 @@ if(isset($_POST['update']))
                             echo $row['tags'];
                             $formtitle=$row['tags'];
                         echo "</td>";
+						echo "<td class='table-td'>";
+                            echo $row['url'];
+                            $formtitle=$row['url'];
+                        echo "</td>";
                      echo "</tr>";
                     }
                     echo "</table>";
@@ -244,6 +251,7 @@ if(isset($_POST['update']))
                    Category : <input type="text" name="category" placeholder="" value="<?php echo $category;?>"><br><br>
                    Prize :  <input type="number" name="prize" placeholder="" value="<?php echo $prize;?>"><br><br>
                    Tags : <input type="text" name="tags" placeholder="" value="<?php echo $tags;?>"><br><br>
+                   Youtube id : <input type="text" name="url" placeholder="" value="<?php echo $url;?>"><br><br>
                     <div>
                 <!-- Input For Add Values To Database-->
                 <input type="submit" name="insert" value="Add">

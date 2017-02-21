@@ -17,9 +17,9 @@
 
 
 	<?php if(isset($_GET["name"])) { ?>
-		<title>produkt - <?= $_GET["name"] ?></title>
+		<title>VIDEO - <?= $_GET["name"] ?></title>
 	<?php } ?>
-	  <title>BAR' ÆNDER WEBSHOP - Cliff, Rasmus</title>
+	  <title>BAREÆNDER VIDEO</title>
 	<!-- favorit icon -->
     <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
     <!-- Bootstrap Core CSS -->
@@ -77,16 +77,10 @@
 		</div>
     <div class="col-sm-6">
 		<h1><?php echo $_GET['name'];?></h1>
-		<h4 style="text-align: left;">Intet spa uden gummiand! Få dig en gummiand med nogle frække solbriller, der kan svømme rundt og passe på dit spabad. <br> <br><B>Katogori</B><br>Denne type ænder er fremstille med inspiration fra den virkelige verden<br><br><B>Størrelse</B><br>5 cm.</h4>
+		<h4 style="text-align: left;">Du er meget velkommen til at skrive din mening om denne film <br> <br><B>Anbefaling</B><br>Du kan dele din anbefaling på facebook<br><br><B>Egnet for børn</B><br>Ja</h4>
    <div class="fb-comments" data-href="http://film.bare&#xe6;nder.dk/produkt.php?name=<?=$_GET["name"]?>" data-numposts="5"></div>
     <div class="row">
-                          <div class="col-xs-6">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="TGA8B4FVVGYVY">
-<input type="image" src="http://xn--barender-m0a.dk/images/kobnuknap.png" border="0" name="submit" alt="PayPal – den sikre og nemme måde at betale på nettet." style="height: 35px;">
-<img alt="" border="0" src="https://www.paypalobjects.com/da_DK/i/scr/pixel.gif" width="1" height="1">
-</form>
+        <div class="col-xs-6">
 		</div>
        <div class="col-xs-6">
         <INPUT TYPE="button" class="btn btn-primary btn" VALUE="Tilbage" onClick="history.go(-1);">
@@ -97,7 +91,7 @@
 	</div>
    <div class="row">
     <div id="recommendedducks" style="margin: auto; width: 50%;">
-       <h1>Videoer der minder om denne</h1>
+      <!-- <h1>Videoer der minder om denne</h1>
         <?php
             if(isset($_GET["name"])) {
                 $name = $_GET["name"];
@@ -107,7 +101,7 @@
                 $tags = null;
                 if(mysqli_num_rows($result) == 1) {
                     $tags = mysqli_fetch_assoc($result);
-                    $tags = explode(",", $tags["tags"]);
+                    $tags = explode(",", $tags["url"]);
                 }
 
 
@@ -115,7 +109,7 @@
                 $data = array();
                 if(mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
-                        $data[$row["id"]] = explode(",", $row["tags"]);
+                        $data[$row["id"]] = explode(",", $row["url"]);
                     }
                 }
 
@@ -152,10 +146,23 @@
 
             }
         ?>
-        
+        -->
     </div>
 		</div>
 	</div>
 	</div>
 </body>
+	<footer>
+ <div class="row">
+   <div class="col-lg-12">
+    <div class="container">
+     <div class="box1">
+                    <p style="text-align: center">www.film.bareænder.dk ©2017<br>
+                    +45 50 71 10 50<br>
+                    shop@bareænder.dk</p>
+
+    </div>
+    </div>
+  </div>
+</footer>
 </html>
